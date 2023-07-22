@@ -1,0 +1,14 @@
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\bin\Debug\net6.0\Test.Database.deps.json
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\bin\Debug\net6.0\Test.Database.runtimeconfig.json
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\bin\Debug\net6.0\Test.Database.dll
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\bin\Debug\net6.0\Test.Database.pdb
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\Test.Database.csproj.AssemblyReference.cache
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\Test.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\Test.Database.AssemblyInfoInputs.cache
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\Test.Database.AssemblyInfo.cs
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\Test.Database.csproj.CoreCompileInputs.cache
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\Test.Database.dll
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\refint\Test.Database.dll
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\Test.Database.pdb
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\Test.Database.genruntimeconfig.cache
+C:\Users\Samith\Downloads\New folder\Test\Test.Database\obj\Debug\net6.0\ref\Test.Database.dll

@@ -1,0 +1,6 @@
+D:\Test\Global Blue\Test.API\obj\Debug\net6.0\GlobaleBlueTest.API.csproj.AssemblyReference.cache
+D:\Test\Global Blue\Test.API\obj\Debug\net6.0\GlobaleBlueTest.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\Global Blue\Test.API\obj\Debug\net6.0\GlobaleBlueTest.API.AssemblyInfoInputs.cache
+D:\Test\Global Blue\Test.API\obj\Debug\net6.0\GlobaleBlueTest.API.AssemblyInfo.cs
+D:\Test\Global Blue\Test.API\obj\Debug\net6.0\GlobaleBlueTest.API.csproj.CoreCompileInputs.cache
+D:\Test\Global Blue\Test.API\obj\Debug\net6.0\GlobaleBlueTest.API.MvcApplicationPartsAssemblyInfo.cache

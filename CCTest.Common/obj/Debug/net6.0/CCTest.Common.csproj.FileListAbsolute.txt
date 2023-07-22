@@ -1,0 +1,12 @@
+D:\Test\CC\CCTest.Common\bin\Debug\net6.0\CCTest.Common.deps.json
+D:\Test\CC\CCTest.Common\bin\Debug\net6.0\CCTest.Common.dll
+D:\Test\CC\CCTest.Common\bin\Debug\net6.0\CCTest.Common.pdb
+D:\Test\CC\CCTest.Common\obj\Debug\net6.0\CCTest.Common.csproj.AssemblyReference.cache
+D:\Test\CC\CCTest.Common\obj\Debug\net6.0\CCTest.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\CC\CCTest.Common\obj\Debug\net6.0\CCTest.Common.AssemblyInfoInputs.cache
+D:\Test\CC\CCTest.Common\obj\Debug\net6.0\CCTest.Common.AssemblyInfo.cs
+D:\Test\CC\CCTest.Common\obj\Debug\net6.0\CCTest.Common.csproj.CoreCompileInputs.cache
+D:\Test\CC\CCTest.Common\obj\Debug\net6.0\CCTest.Common.dll
+D:\Test\CC\CCTest.Common\obj\Debug\net6.0\refint\CCTest.Common.dll
+D:\Test\CC\CCTest.Common\obj\Debug\net6.0\CCTest.Common.pdb
+D:\Test\CC\CCTest.Common\obj\Debug\net6.0\ref\CCTest.Common.dll

@@ -1,0 +1,17 @@
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\bin\Debug\net6.0\Test.Repository.deps.json
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\bin\Debug\net6.0\Test.Repository.dll
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\bin\Debug\net6.0\Test.Repository.pdb
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\bin\Debug\net6.0\Test.Common.dll
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\bin\Debug\net6.0\Test.Database.dll
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\bin\Debug\net6.0\Test.Common.pdb
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\bin\Debug\net6.0\Test.Database.pdb
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\Test.Repository.csproj.AssemblyReference.cache
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\Test.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\Test.Repository.AssemblyInfoInputs.cache
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\Test.Repository.AssemblyInfo.cs
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\Test.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\Test.Repository.csproj.CopyComplete
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\Test.Repository.dll
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\refint\Test.Repository.dll
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\Test.Repository.pdb
+C:\Users\Samith\Downloads\New folder\Test\Test.Repository\obj\Debug\net6.0\ref\Test.Repository.dll

@@ -1,0 +1,17 @@
+D:\Test\CC\CCTest.Repository\bin\Debug\net6.0\CCTest.Repository.deps.json
+D:\Test\CC\CCTest.Repository\bin\Debug\net6.0\CCTest.Repository.dll
+D:\Test\CC\CCTest.Repository\bin\Debug\net6.0\CCTest.Repository.pdb
+D:\Test\CC\CCTest.Repository\bin\Debug\net6.0\CCTest.Common.dll
+D:\Test\CC\CCTest.Repository\bin\Debug\net6.0\CCTest.Database.dll
+D:\Test\CC\CCTest.Repository\bin\Debug\net6.0\CCTest.Common.pdb
+D:\Test\CC\CCTest.Repository\bin\Debug\net6.0\CCTest.Database.pdb
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\CCTest.Repository.csproj.AssemblyReference.cache
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\CCTest.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\CCTest.Repository.AssemblyInfoInputs.cache
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\CCTest.Repository.AssemblyInfo.cs
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\CCTest.Repository.csproj.CoreCompileInputs.cache
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\CCTest.Repository.csproj.CopyComplete
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\CCTest.Repository.dll
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\refint\CCTest.Repository.dll
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\CCTest.Repository.pdb
+D:\Test\CC\CCTest.Repository\obj\Debug\net6.0\ref\CCTest.Repository.dll

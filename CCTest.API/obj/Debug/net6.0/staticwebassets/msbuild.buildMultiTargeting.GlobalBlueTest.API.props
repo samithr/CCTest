@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GlobalBlueTest.API.props" />
+</Project>
