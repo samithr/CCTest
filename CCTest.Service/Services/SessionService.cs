@@ -1,36 +1,49 @@
-﻿using CCTest.Service.Contracts;
+﻿using CCTest.Common.Util;
+using CCTest.Service.Contracts;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Configuration;
 
 namespace CCTest.Service.Services
 {
     public class SessionService : ISessionService
     {
         private readonly IMemoryCache _sessionQueueMemory;
+        private readonly IConfiguration _configuration;
 
         #region Properties
         /// <summary>
         /// These values calculated from the assessment description and store as hard coded values
         /// In order to make more flexible system, these values can store in database tables and use accordingly at run time
         /// </summary>
-        private readonly short officeHoursQueueSize = 64;
-        private readonly short officeHoursChatCapacity = 43;
-        private readonly short overflowTeamQueueSize = 36;
-        private readonly short overflowTeamChatCapacity = 24;
-        private readonly short nightQueueSize = 9;
+        private readonly short officeHoursQueueSize;
+        private readonly short overflowTeamQueueSize;
+        private readonly short nightShiftQueueSize;
+        private readonly short officeStartHour;
+        private readonly short officeEndHour;
         private Queue<string> sessionQueue = new();
         #endregion
 
         #region Constructor
-        public SessionService(IMemoryCache sessionQueueMemory)
+        public SessionService(IMemoryCache sessionQueueMemory,
+                              IConfiguration configuration)
         {
             _sessionQueueMemory = sessionQueueMemory;
+            _configuration = configuration;
+
             if (!_sessionQueueMemory.TryGetValue("SessionQueue", out Queue<short> _))
             {
                 _sessionQueueMemory.Set("SessionQueue", sessionQueueMemory);
             }
             sessionQueue = _sessionQueueMemory.Get("SessionQueue") as Queue<string>;
+
+            short.TryParse(_configuration["OfficeHoursQueueSize"], out officeHoursQueueSize);
+            short.TryParse(_configuration["OverflowTeamQueueSize"],out overflowTeamQueueSize);
+            short.TryParse(_configuration["NightShiftQueueSize"], out nightShiftQueueSize);
+            short.TryParse(_configuration["OfficeStartHour"], out officeStartHour);
+            short.TryParse(_configuration["OfficeEndHour"], out officeEndHour);
         }
         #endregion
+
 
         #region Public Methods
 
@@ -46,15 +59,14 @@ namespace CCTest.Service.Services
                 {
                     return false;
                 }
-                var dayTime = (DateTime.UtcNow.Hour < 16 && DateTime.UtcNow.Hour > 8);
-                if (sessionQueue != null && !sessionQueue.Contains(userId.ToString()) && dayTime &&
-                    ((sessionQueue.Count < officeHoursQueueSize) || sessionQueue.Count < (officeHoursQueueSize + overflowTeamQueueSize)))
+                var dayTime = CommonCalculations.IsDayShift(officeStartHour, officeEndHour);
+                if (sessionQueue != null && !sessionQueue.Contains(userId.ToString()) && ((sessionQueue.Count < officeHoursQueueSize) || sessionQueue.Count < (officeHoursQueueSize + overflowTeamQueueSize)))
                 {
                     if (dayTime && (sessionQueue.Count < officeHoursQueueSize))
                     {
                         return await Task.FromResult(true);
                     }
-                    else if (sessionQueue.Count < nightQueueSize)
+                    else if (sessionQueue.Count < nightShiftQueueSize)
                     {
                         return await Task.FromResult(true);
                     }
@@ -121,7 +133,7 @@ namespace CCTest.Service.Services
         {
             try
             {
-                if (addSession && (sessionQueue.Count < nightQueueSize))
+                if (addSession && (sessionQueue.Count < nightShiftQueueSize))
                 {
                     sessionQueue.Enqueue(userId);
                     return await Task.FromResult(true);

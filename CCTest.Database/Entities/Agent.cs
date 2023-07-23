@@ -9,5 +9,8 @@ namespace CCTest.Database.Entities
         public string? SeniorityLevel{ get; set; }
         public double SeniorityFactor { get; set; }
         public int CurrentChatCount { get; set; }
+        public Guid TeamId { get; set; }
+
+        public Team? Team { get; set; }
     }
 }

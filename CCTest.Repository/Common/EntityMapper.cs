@@ -11,12 +11,18 @@ namespace CCTest.Repository.Common
 
         private IMapper? _mapper;
 
+        #region Constructor
         public EntityMapper(IMapper mapper)
         {
             Configure();
             Create();
         }
 
+        #endregion
+
+        /// <summary>
+        /// Configure mappings with entity to Dto
+        /// </summary>
         private void Configure()
         {
             _config ??= new MapperConfiguration(cfg =>
@@ -34,6 +40,13 @@ namespace CCTest.Repository.Common
             }
         }
 
+        /// <summary>
+        /// Common map method
+        /// </summary>
+        /// <typeparam name="TSource"></typeparam>
+        /// <typeparam name="TDestination"></typeparam>
+        /// <param name="source"></param>
+        /// <returns></returns>
         public TDestination Map<TSource, TDestination>(TSource source)
         {
             return _mapper.Map<TSource, TDestination>(source);

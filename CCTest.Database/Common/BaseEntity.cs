@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CCTest.Database.Common
 {
+    /// <summary>
+    /// Base entity for generating database entities with basic tracking data
+    /// </summary>
     public class BaseEntity
     {
         [Key]

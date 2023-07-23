@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "b5jdvyJqVPke5N7NZ4ncnTIFfD5IgLRd78S5QdziHvBXFrbuxY0eX6XLDCoIRSRuLGBpBNs5WmIgNJhgsCEJKw==",
+  "dgSpecHash": "q3IGCHkE97sHhrvznvbyXpgV8ctzByOssPRESf8EsV2iZNAedYflaYEGp3xpsaVxVt/G9SR3A9sH+j4qF4V1HA==",
   "success": true,
   "projectFilePath": "D:\\Test\\CC\\CCTest.UnitTest\\CCTest.UnitTest.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\Samith\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Samith\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\Samith\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Samith\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.4\\microsoft.extensions.configuration.binder.7.0.4.nupkg.sha512",
     "C:\\Users\\Samith\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Samith\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Samith\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",

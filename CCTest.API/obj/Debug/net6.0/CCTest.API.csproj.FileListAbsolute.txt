@@ -21,6 +21,7 @@ D:\Test\CC\CCTest.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.
 D:\Test\CC\CCTest.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 D:\Test\CC\CCTest.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\Test\CC\CCTest.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Test\CC\CCTest.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
 D:\Test\CC\CCTest.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\Test\CC\CCTest.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Test\CC\CCTest.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll

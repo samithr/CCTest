@@ -20,6 +20,13 @@ namespace CCTest.Service.Services
         #endregion
 
         #region Public methods
+
+        /// <summary>
+        /// Initiate support request by updating the session queue
+        /// If limit for the queue is exceeded, NOK will sent to the client
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public async Task<ServiceResponse> InitiateSupportRequest(string userId)
         {
             try
@@ -27,7 +34,6 @@ namespace CCTest.Service.Services
                 var sessionAvailable = await CheckSessionAvailability(userId);
                 if (sessionAvailable && await UpdateSessionQueueu(userId))
                 {
-                    await AssignAgent(userId);
                     return await SendOkResponse();
                 }
                 else
@@ -35,7 +41,6 @@ namespace CCTest.Service.Services
                     var overflowTeamAvailable = await CheckOverflowTeamAvailablity(userId);
                     if (overflowTeamAvailable && await UpdateSessionQueueu(userId))
                     {
-                        await AssignAgent(userId);
                         return await SendOkResponse();
                     }
                 }
@@ -116,22 +121,6 @@ namespace CCTest.Service.Services
             else
             {
                 return await _sessionService.UpdateSessionQueueNightShift(userId, true);
-            }
-        }
-
-        /// <summary>
-        /// Use agent service to assign a agent for chat
-        /// </summary>
-        /// <returns></returns>
-        private async Task AssignAgent(string userId)
-        {
-            try
-            {
-                await _agentService.AssignChatForAgent(userId);
-            }
-            catch (Exception)
-            {
-                throw;
             }
         }
 

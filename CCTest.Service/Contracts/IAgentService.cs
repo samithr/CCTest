@@ -2,7 +2,7 @@
 {
     public interface IAgentService
     {
-        Task<bool> AssignChatForAgent(string userId);
+        Task<bool> AssignChatForAgent();
         Task<string> GetResponse(string inputMessage);
     }
 }

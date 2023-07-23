@@ -1,6 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using CCTest.API.ApiResponses;
+using Newtonsoft.Json;
 using System.Net;
-using CCTest.API.ApiResponses;
 
 namespace CCTest.API.Middlewares
 {

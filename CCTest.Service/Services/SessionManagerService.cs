@@ -30,10 +30,9 @@ namespace CCTest.Service.Services
                 var sessionCount = await _sessionService.GetSessionQueueCount();
                 if (sessionCount > 0)
                 {
-                    var user = await _sessionService.DequeueSession();
-                    if (user != null)
+                    if (await AssignAgent())
                     {
-                        await AssignAgent(user);
+                        var user = await _sessionService.DequeueSession();
                     }
                 }
             }
@@ -51,11 +50,11 @@ namespace CCTest.Service.Services
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        private async Task AssignAgent(string user)
+        private async Task<bool> AssignAgent()
         {
             try
             {
-                await _agentService.AssignChatForAgent(user);
+                return await _agentService.AssignChatForAgent();
             }
             catch (Exception)
             {

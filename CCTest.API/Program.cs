@@ -31,7 +31,7 @@ GlobalConfiguration.Configuration.UsePostgreSqlStorage(connectionString);
 
 builder.Services.AddSignalR();
 
-//builder.Services.AddScoped<IEntityMapper, EntityMapper>();
+builder.Services.AddScoped<IEntityMapper, EntityMapper>();
 
 #region Repository DI
 
