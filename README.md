@@ -9,16 +9,22 @@ The apllication consists .Net 6 REST API as a backend solution to the given prob
 Ideally these values sould calculate at run time by getting data from database tables
 4. As a monitoring service, Hangfire recurring job will run every minute to handle the session queue
 
+
 # Additional notes
 
-# Exception are handles using common module, integrating error handling middleware
+1. Exception are handles using common module, integrating error handling middleware
 
-# Only one SignalR hub is implemented to keep communication with Actor and Agent
+2. Only one SignalR hub is implemented to keep communication with Actor and Agent
 
-# Agent response are mocked, to reduce implementation effort
+3. Agent response are mocked, to reduce implementation effort
 
-# Health checks, common logs are not implemented in this solution
+4. Health checks, common logs are not implemented in this solution
 
-# PostgreSQL database is used with code first apporach
+5. PostgreSQL database is used with code first apporach
 
-# Unit tests are not completed for every part, due to limited time
+6. Unit tests are not completed for every part
+
+# Improvement points
+1. Agent capacity, queue length/storage to be store in the database tables and calculate at the run time
+2. Use message broker service to store queue data, so this can be implemented as a separate service
+3. Values added in the configuration can be move to more suitable/secure storage
