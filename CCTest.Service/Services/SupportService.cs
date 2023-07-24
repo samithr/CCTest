@@ -1,5 +1,7 @@
-﻿using CCTest.Service.Contracts;
+﻿using CCTest.Common.Util;
+using CCTest.Service.Contracts;
 using CCTest.Service.Shared;
+using Microsoft.Extensions.Configuration;
 
 namespace CCTest.Service.Services
 {
@@ -8,14 +10,21 @@ namespace CCTest.Service.Services
         #region Services Injection
         private readonly IAgentService _agentService;
         private readonly ISessionService _sessionService;
+        private readonly IConfiguration _configuration;
         #endregion
+
+        private readonly short officeStartHour;
+        private readonly short officeEndHour;
 
         #region Constructor
         public SupportService(IAgentService agentService,
-                              ISessionService sessionService)
+                              ISessionService sessionService,
+                              IConfiguration configuration)
         {
             _agentService = agentService;
             _sessionService = sessionService;
+            short.TryParse(_configuration["OfficeStartHour"], out officeStartHour);
+            short.TryParse(_configuration["OfficeEndHour"], out officeEndHour);
         }
         #endregion
 
@@ -32,14 +41,14 @@ namespace CCTest.Service.Services
             try
             {
                 var sessionAvailable = await CheckSessionAvailability(userId);
-                if (sessionAvailable && await UpdateSessionQueueu(userId))
+                if (sessionAvailable && await UpdateSessionQueue(userId))
                 {
                     return await SendOkResponse();
                 }
                 else
                 {
                     var overflowTeamAvailable = await CheckOverflowTeamAvailablity(userId);
-                    if (overflowTeamAvailable && await UpdateSessionQueueu(userId))
+                    if (overflowTeamAvailable && await UpdateSessionQueue(userId))
                     {
                         return await SendOkResponse();
                     }
@@ -111,9 +120,9 @@ namespace CCTest.Service.Services
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
-        private async Task<bool> UpdateSessionQueueu(string userId)
+        private async Task<bool> UpdateSessionQueue(string userId)
         {
-            var dayTime = (DateTime.UtcNow.Hour < 16 && DateTime.UtcNow.Hour > 8);
+            var dayTime = CommonCalculations.IsDayShift(officeStartHour, officeEndHour);
             if (dayTime)
             {
                 return await _sessionService.UpdateSessionQueueDayShift(userId, true);

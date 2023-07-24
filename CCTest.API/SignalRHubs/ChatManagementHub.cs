@@ -39,9 +39,5 @@ namespace CCTest.API.SignalRHubs
             _logger.LogError(e.Message);
             await base.OnDisconnectedAsync(e);
         }
-        /// connect with session service
-        /// monitor the queue
-        /// assign agents based on team and availability
-        /// in offic hours, assign overflow team to chats when normal queue exceeds
     }
 }

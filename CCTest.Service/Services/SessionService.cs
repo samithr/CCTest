@@ -87,7 +87,7 @@ namespace CCTest.Service.Services
         {
             try
             {
-                var dayTime = (DateTime.UtcNow.Hour < 16 && DateTime.UtcNow.Hour > 8);
+                var dayTime = CommonCalculations.IsDayShift(officeStartHour, officeEndHour);
                 if (dayTime && (sessionQueue.Count < officeHoursQueueSize + overflowTeamQueueSize))
                 {
                     return await Task.FromResult(true);
@@ -169,13 +169,12 @@ namespace CCTest.Service.Services
                 {
                     return await Task.FromResult(sessionQueue.Dequeue());
                 }
+                return string.Empty;
             }
             catch (Exception)
             {
-
                 throw;
             }
-            throw new NotImplementedException();
         }
 
         #endregion
