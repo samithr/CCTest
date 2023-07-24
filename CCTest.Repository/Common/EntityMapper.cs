@@ -12,7 +12,7 @@ namespace CCTest.Repository.Common
         private IMapper? _mapper;
 
         #region Constructor
-        public EntityMapper(IMapper mapper)
+        public EntityMapper()
         {
             Configure();
             Create();

@@ -152,7 +152,7 @@ namespace CCTest.Service.Services
         /// <returns> session queue count</returns>
         public async Task<int> GetSessionQueueCount()
         {
-            return await Task.FromResult(sessionQueue.Count);
+            return await Task.FromResult(sessionQueue != null ? sessionQueue.Count : 0);
         }
 
         /// <summary>
